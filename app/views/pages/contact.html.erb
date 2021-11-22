@@ -1,0 +1,16 @@
+
+<% members = %w[ken geetha suansen zhenyi huiling] %>
+
+<%= link_to "About us", about_path , class: 'nav-link' %>
+
+
+<h2>Meet our team</h2>
+<%# <ul> %>
+<% members.each do |member|  %>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <%= member.capitalize %>
+  </div>
+</div>
+  <% end %>
+<%# </ul> %>
